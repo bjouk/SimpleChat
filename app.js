@@ -31,7 +31,7 @@ io.on('connection', function(socket){
     	socket.handshake.session.save();
     })
 	socket.on('chat message',function(msg){
-		io.emit('chat message',{pseudo:socket.handshake.session.pseudo, message:msg})
+		socket.broadcast.emit('chat message',{pseudo:socket.handshake.session.pseudo, message:msg})
 		console.log(socket.handshake.session.pseudo,msg)
 	})
 })
