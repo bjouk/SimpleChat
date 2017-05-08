@@ -37,6 +37,6 @@ io.on('connection', function(socket){
 })
 
 app.use('/static', express.static('public'));
-server.listen(8080, function(){
+server.listen(process.env.PORT || 8080, function(){
   console.log('listening on *:8080');
 });	
