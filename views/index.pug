@@ -1,0 +1,20 @@
+head
+	title MyChat
+	script(src="/socket.io/socket.io.js")
+	script(src ='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+	link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel="stylesheet")
+	link(rel="stylesheet" type="text/css" href="/static/style.css")
+
+	script(src='/static/client.js')
+body
+	div(id='login')
+			form(class='form-inline' action='' id='loginForm' method='#' class='align-bottom')
+				input(id='pseudoVal' class="form-control" placeholder='Pseudo')
+				button(class='btn btn-primary') Set
+	div(class='container-fluid' style='height:100%')
+		div(id='wrap' class='')
+			h1 Test Chat
+			ul(id='conv')
+			form(class='form-inline' action='' id='form' method='#' class='align-bottom')
+					input(id='mess' class="form-control" placeholder='message')
+					button(class='btn btn-primary') Send
