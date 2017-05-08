@@ -1,11 +1,27 @@
 {
   "name": "chat",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-socket.io-session": "^1.3.2",
+    "express-session": "^1.15.2",
+    "session.socket.io": "^0.2.1",
+    "socket.io": "^1.7.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjouk/SimpleChat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bjouk/SimpleChat/issues"
+  },
+  "homepage": "https://github.com/bjouk/SimpleChat#readme",
+  "description": ""
 }
